@@ -14,7 +14,7 @@ describe("User Controller", () => {
 
 // Test de la route login
 describe("Login", () => {
-    it("should login an existing user and return a token", async () => {
+    it("devrait permettre la connexion d'un utilisateur existant et retourner un jeton.", async () => {
       const req = {
         body: {
           email: "patrick@sebastien.com",
@@ -48,7 +48,7 @@ describe("Login", () => {
       });
     });
 
-    it("should return an error if password is incorrect", async () => {
+    it("retourner une erreur si le mot de passe est incorrecte", async () => {
       const req = {
         body: {
           email: "pierre@belmondo.com",

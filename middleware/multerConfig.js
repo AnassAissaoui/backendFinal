@@ -5,7 +5,8 @@ const multer = require('multer');
 const MIME_TYPES = {
   'image/jpg': 'jpg',    // Type MIME pour les fichiers JPG
   'image/jpeg': 'jpg',   // Type MIME pour les fichiers JPEG
-  'image/png': 'png'     // Type MIME pour les fichiers PNG
+  'image/png': 'png',     // Type MIME pour les fichiers PNG
+  'image/gif': 'gif'      // Type MIME pour les fichiers PNG
 };
 
 // Configuration du stockage des fichiers avec multer

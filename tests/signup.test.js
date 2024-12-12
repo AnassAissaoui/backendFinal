@@ -12,7 +12,7 @@ describe("User Controller", () => {
 
   // Test de la route signup
   describe("Signup", () => {
-    it("should create a new user and return a success message", async () => {
+    it("devrait créer un nouvel utilisateur et retourner un message de succès.", async () => {
       const req = {
         body: {
           pseudo: "testuser",
@@ -40,7 +40,7 @@ describe("User Controller", () => {
       });
     });
 
-    it("should return an error if password hashing fails", async () => {
+    it("Il devrait retourner une erreur si le hachage du mot de passe échoue.", async () => {
       const error = new Error("error")
       const req = {
         body: {
