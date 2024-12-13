@@ -4,7 +4,7 @@ const multer = require('multer');
 // Définition des types MIME supportés pour les images
 const MIME_TYPES = {
   'image/jpg': 'jpg',    // Type MIME pour les fichiers JPG
-  'image/jpeg': 'jpg',   // Type MIME pour les fichiers JPEG
+  'image/jpeg': 'jpeg',   // Type MIME pour les fichiers JPEG
   'image/png': 'png',     // Type MIME pour les fichiers PNG
   'image/gif': 'gif'      // Type MIME pour les fichiers PNG
 };
