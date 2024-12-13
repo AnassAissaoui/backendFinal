@@ -2,7 +2,7 @@
 const express = require("express");
 
 // Importation du middleware d'authentification pour protéger les routes
-const auth = require("../middleware/authMiddleware");
+const auth = require("../config/authConfig");
 
 // Création du routeur pour gérer les routes de commentaires
 const router = express.Router();

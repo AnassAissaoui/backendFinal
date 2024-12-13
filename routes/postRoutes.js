@@ -2,10 +2,10 @@
 const express = require("express");
 
 // Importation du middleware d'authentification pour vérifier les utilisateurs
-const auth = require("../middleware/authMiddleware");
+const auth = require("../config/authConfig");
 
 // Importation du middleware Multer pour gérer le téléchargement des fichiers (images, etc.)
-const multer = require("../middleware/multerConfig");
+const multer = require("../config/multerConfig");
 
 // Création du routeur qui va gérer les routes pour les posts
 const router = express.Router();
