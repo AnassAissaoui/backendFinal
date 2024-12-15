@@ -62,7 +62,7 @@ module.exports.deletePost = async (req, res) => {
     if (post.author.toString() !== req.auth.userId && req.auth.role !== "admin") return res.status(403).json({ message: "Non autorisé" });
 
     await PostModel.findByIdAndDelete(req.params.id);
-    res.status(200).json({ message: "Post supprimé" });
+    res.status(200).json({ message: "Post supprimé"});
   } catch (err) {
     res.status(500).json({ message: "Erreur lors de la suppression du post", err });
   }
